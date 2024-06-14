@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<meta
+			http-equiv="X-UA-Compatible"
+			content="ie=edge"
+		/>
+		<title>Form (Coding Theme)</title>
+		<link
+			rel="stylesheet"
+			href="styles.css"
+		/>
+		<link
+			rel="preconnect"
+			href="https://fonts.googleapis.com"
+		/>
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap"
+			rel="stylesheet"
+		/>
+		<style>
+			button {font-size: larger;}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<button><a href="https://cosmicmar.github.io/code-form/"">okay go back to the pretty one</a></button>
+			<h1 id="title">it looks like you may be interested</h1>
+			<p id="description">
+				if so, fill this bad boy out and we'll get back to you
+				<br />after we chug this caffeine.
+			</p>
+		</div>
+		<form id="form">
+			<h2 id="form-title">
+				&lt;<span class="tag">form</span>
+				<span class="attribute"> id</span>=<span class="value"
+					>"interested-form"</span
+				>&gt;
+			</h2>
+			<fieldset
+				id="gen-info"
+				class="wrapper field"
+			>
+				<p>&lt;!--let's snag some general info from you first--&gt;</p>
+				<div class="indent">
+					<label
+						for="name"
+						id="label-name"
+					>
+						&lt;<span class="tag break">input</span>
+						<span class="attribute break-indent">id</span><!--
+						-->=<span class="value break">"name"</span
+						><span class="attribute break-indent"> value</span>="<!--
+						--><input
+							id="name"
+							type="text"
+							name="name"
+							placeholder="type name here"
+							required
+						/>"&gt;
+					</label>
+					<label
+						for="email"
+						id="label-email"
+					>
+						&lt;<span class="tag">input</span>
+						<span class="attribute">id</span><!--
+						-->=<span class="value">"email"</span>
+						<span class="attribute"> value</span>="<!--
+						--><input
+							id="email"
+							type="email"
+							name="email"
+							placeholder="type email here"
+							required
+						/>"&gt;
+					</label>
+					<label
+						for="phone"
+						id="label-phone"
+					>
+						&lt;<span class="tag">input</span>
+						<span class="attribute">id</span><!--
+						-->=<span class="value">"phone"</span>
+						<span class="attribute"> value</span><!--
+						-->="<input
+							id="phone"
+							type="tel"
+							name="phone"
+							placeholder="type number here"
+							required
+							pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+						/>"&gt;
+					</label>
+				</div>
+			</fieldset>
+			<fieldset
+				id="service-info"
+				class="wrapper field"
+			>
+				<p>&lt;!--now that we've got that knocked out...--&gt;</p>
+				<p>&lt;!--what type of service are you looking for?--&gt;</p>
+				<div class="indent">
+					<ul>
+						<li>
+							<label
+								for="design"
+								id="label-design"
+							>
+								&lt;<span class="tag">input</span>
+								<span class="attribute">id</span><!--
+								-->=<span class="value">"web-design"</span>
+								<span class="attribute">value</span>="<!--
+								--><input
+									type="checkbox"
+									id="design"
+									name="design"
+									value="design"
+								/>
+								<label
+									for="design"
+									id="check-1"
+									>click here</label
+								>"&gt;
+							</label>
+						</li>
+						<li>
+							<label
+								for="develop"
+								id="label-develop"
+							>
+								&lt;<span class="tag">input</span>
+								<span class="attribute">id</span><!--
+								-->=<span class="value">"web-develop"</span>
+								<span class="attribute">value</span>="<!--
+								--><input
+									type="checkbox"
+									id="develop"
+									name="develop"
+									value="develop"
+								/>
+								<label
+									for="develop"
+									id="check-2"
+									>click here</label
+								>"&gt;
+							</label>
+						</li>
+						<li>
+							<label
+								for="manage"
+								id="label-manage"
+							>
+								&lt;<span class="tag">input</span>
+								<span class="attribute">id</span><!--
+								-->=<span class="value">"web-manage"</span>
+								<span class="attribute">value</span>="<!--
+									-->
+								<input
+									type="checkbox"
+									id="manage"
+									name="manage"
+									value="manage"
+								/>
+								<label
+									for="manage"
+									id="check-3"
+									>click here</label
+								>"&gt;
+							</label>
+						</li>
+						<li>
+							<label
+								for="inquiry"
+								id="label-inquiry"
+							>
+								&lt;<span class="tag">input</span>
+								<span class="attribute">id</span>=<!--
+								--><span class="value">"gen-inquiry"</span>
+								<span class="attribute">value</span>="<!--
+								-->
+								<input
+									type="checkbox"
+									id="inquiry"
+									name="inquiry"
+									value="inquiry"
+								/>
+								<label
+									for="inquiry"
+									id="check-4"
+									>click here</label
+								>"&gt;
+							</label>
+						</li>
+					</ul>
+				</div>
+			</fieldset>
+			<fieldset
+				id="add-info"
+				class="wrapper field"
+			>
+				<p>&lt;!--give us knuckleheads some extra info?--&gt;</p>
+				<div class="indent">
+					<span class="tag">&lt;p&gt;</span><br />
+					<textarea
+						id="add-info"
+						name="add-info"
+						rows="4"
+						cols="30"
+						placeholder="type your junk here"
+					></textarea>
+					<br /><span class="tag">&lt;/p&gt;</span>
+				</div>
+			</fieldset>
+			<fieldset
+				id="submit"
+				class="wrapper field"
+			>
+				<p>&lt;!--that's all folks, you know what to do--&gt;</p>
+			</fieldset>
+			<input
+				type="submit"
+				value="autobots, roll out"
+			/>
+		</form>
+	</body>
+</html>
